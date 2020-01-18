@@ -8,10 +8,11 @@
 		<version>2.2.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<packaging>war</packaging>
 	<groupId>com.hackthepress</groupId>
 	<artifactId>sync-kick</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>podclub</name>
+	<name>sync-kick</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -48,12 +49,19 @@
 	</dependencies>
 
 	<build>
+		<finalName>sync-kick</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>2.0.16</version>
+			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
