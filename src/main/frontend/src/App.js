@@ -3,6 +3,7 @@ import './App.css';
 
 import handlers from './utils/handlers';
 import Screen from './components/Screen';
+import ChatPage from './components/ChatPage'
 
 function App() {
   const [files, setFiles] = React.useState([]);

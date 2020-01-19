@@ -1,4 +1,4 @@
-package com.hackthepress.podclub.domain;
+package com.hackthepress.synckick.domain;
 
 import java.time.LocalDateTime;
 

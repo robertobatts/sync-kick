@@ -1,10 +1,10 @@
-package com.hackthepress.podclub.controller;
+package com.hackthepress.synckick.controller;
 
-import com.hackthepress.podclub.domain.CommentedTranscriptedAudio;
-import com.hackthepress.podclub.domain.PostCommentRequest;
-import com.hackthepress.podclub.domain.TranscriptedAudio;
-import com.hackthepress.podclub.service.CommentedTransriptedAudioService;
-import com.hackthepress.podclub.service.TranscriptedAudioService;
+import com.hackthepress.synckick.domain.CommentedTranscriptedAudio;
+import com.hackthepress.synckick.domain.PostCommentRequest;
+import com.hackthepress.synckick.domain.TranscriptedAudio;
+import com.hackthepress.synckick.service.CommentedTransriptedAudioService;
+import com.hackthepress.synckick.service.TranscriptedAudioService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

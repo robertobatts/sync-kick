@@ -1,4 +1,4 @@
-package com.hackthepress.podclub.domain;
+package com.hackthepress.synckick.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -1,7 +1,7 @@
-package com.hackthepress.podclub.service;
+package com.hackthepress.synckick.service;
 
-import com.hackthepress.podclub.domain.TranscriptedAudio;
-import com.hackthepress.podclub.repository.TranscriptedAudioRepository;
+import com.hackthepress.synckick.domain.TranscriptedAudio;
+import com.hackthepress.synckick.repository.TranscriptedAudioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

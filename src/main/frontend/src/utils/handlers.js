@@ -14,7 +14,29 @@ const getAlldata = () => {
 
 const getById = id => {
   return axios
-    .get(`/get-transcriptedaudio/${id}`)
+    .get(`/get-transcriptedaudio?${id}`)
+    .then(res => {
+      return res.data;
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+const getCommentsByAudioId = audioId => {
+  return axios
+    .get(`/get-comments?id=${audioId}`)
+    .then(res => {
+      return res.data;
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+const postComment = (audioId, wordNumber, user, comment) => {
+  return axios
+    .post(`/post-comment`, {audioId: audioId, wordNumber: wordNumber, user: user, comment: comment})
     .then(res => {
       return res.data;
     })
@@ -25,5 +47,7 @@ const getById = id => {
 
 export default {
   getAlldata,
-  getById
+  getById,
+  getCommentsByAudioId,
+  postComment
 };

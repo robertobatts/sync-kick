@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Player from './Player';
-import TrackDetails from './TrackDetails';
+import AudioCard from './AudioCard';
 
 const Screen = ({ files }) => {
   if (files.length === 0) {
@@ -9,8 +8,11 @@ const Screen = ({ files }) => {
   } else {
     return (
       <>
-        <TrackDetails track={files[0]} />
-        <Player track={files[0]} />
+      {
+        files.map((file, i) => <> 
+          <AudioCard track={file} key={file.id} />
+        </>)
+      }
       </>
     );
   }
