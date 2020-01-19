@@ -1,0 +1,1 @@
+PATH_TO_GOOGLE_API_KEY = r'C:\Users\Mariia Kren\Downloads\HackThePress-c71e111526bb.json'
